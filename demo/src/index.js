@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 // import State from './Components/Header/Header.js';
-import User from './Components/Parent-child/User.js';
+// import User from './Components/Parent-child/User.js';
+import Parent from './Components/Child to Parent/Parent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <State /> */}
-    <User/>
+    {/* <User/> */}
+    <Parent/>
   </React.StrictMode>,
   document.getElementById('root')
 );
