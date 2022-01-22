@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
-import State from './Components/Header/Header.js';
+// import State from './Components/Header/Header.js';
+import User from './Components/Parent-child/User.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <State />
+    {/* <State /> */}
+    <User/>
   </React.StrictMode>,
   document.getElementById('root')
 );
