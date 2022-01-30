@@ -4,7 +4,10 @@ import './App.css';
 // import Parent from './Components/Child to Parent/Parent';
 // import Home from './Components/ChatApp/Home';
 // import ProfileState from './Components/State/ProfileState';
-import UserProfile from './Components/UserProfile/UserProfile';
+// import UserProfile from './Components/UserProfile/UserProfile';
+// import Gender from './Components/Gender/Gender';
+// import AxiosUser from './Components/Axios/AxiosUser';
+import AsyncAwait from './Components/Axios/AsyncAwait';
 
 function App() {
   return (
@@ -14,7 +17,10 @@ function App() {
     {/* <User/> */}
     {/* <Parent/> */}
     {/* <Home/> */}
-    <UserProfile/>
+    {/* <UserProfile/> */}
+    {/* <Gender/> */}
+    {/* <AxiosUser/> */}
+    <AsyncAwait/>
     </div>
   );
 }
