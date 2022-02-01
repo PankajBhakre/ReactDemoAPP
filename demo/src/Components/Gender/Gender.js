@@ -6,30 +6,35 @@ class Gender extends Component {
     super(props);
 
     this.state = {
-      info: userData,
+      info: userData.results,
     };
   }
 
+
   allUsers = () => {
       this.setState({
-          info: this.state.info.results
+          info: userData.results
       })
   }
-  maleUsers = () => {
-    console.log(this.state.info.results.filter(x=>x.gender === 'male'));
+  maleUsers = (event) => {
+    if(event.target.value === 'Male'){
+      this.filteredarray = userData.results.filter(x=>x.gender === 'male')
     this.setState({
-        info:this.state.info.results
+        info:this.filteredarray
     })
+    }
+    
+    console.log(userData.results.filter(x=>x.gender === 'male'));
 }
 
-femaleUsers = () => {
-    console.log(this.state.info.results.filter(x=>x.gender === 'female'));
-     this.state.info.results.filter(x=>x.gender === 'female').map(function(element){
-         console.log(element)
-         this.setState({
-             info:element
-         })
-     });
+femaleUsers = (event) => {
+ if(event.target.value === 'Female'){
+  this.filteredarray = userData.results.filter(x=>x.gender === 'female')
+  this.setState({
+      info:this.filteredarray
+  })
+ }
+  console.log(userData.results.filter(x=>x.gender === 'female'));
 
 }
 
@@ -42,14 +47,14 @@ femaleUsers = () => {
           </div>
         </div>
         <div className="row mt-5">
-            <div className="col-2">
-            <input type="radio" value="Other" name="gender" checked={true} readOnly onClick={this.allUsers} /> All
+            <div className="col-1">
+            <input type="radio" value="Other" name="gender"   onChange={this.allUsers} /> All
             </div>
-            <div className="col-2">
-            <input type="radio" value="Male" name="gender" readOnly onClick={this.maleUsers}/> Male
+            <div className="col-1">
+            <input type="radio" value="Male" name="gender"  onChange={this.maleUsers}/> Male
             </div>
-            <div className="col-2">
-            <input type="radio" value="Female" name="gender" readOnly onClick={this.femaleUsers}/> Female
+            <div className="col-1">
+            <input type="radio" value="Female" name="gender"  onChange={this.femaleUsers}/> Female
             </div>
         </div>
         <div className="row">
@@ -65,7 +70,7 @@ femaleUsers = () => {
                 </tr>
               </thead>
               <tbody>
-                {this.state.info.results.map(function (element) {
+                {this.state.info.map(function (element) {
                   return (
                     <tr>
                       <td>

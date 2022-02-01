@@ -5,22 +5,24 @@ import './App.css';
 // import Home from './Components/ChatApp/Home';
 // import ProfileState from './Components/State/ProfileState';
 // import UserProfile from './Components/UserProfile/UserProfile';
-// import Gender from './Components/Gender/Gender';
+import Gender from './Components/Gender/Gender';
 // import AxiosUser from './Components/Axios/AxiosUser';
-import AsyncAwait from './Components/Axios/AsyncAwait';
+// import AsyncAwait from './Components/Axios/AsyncAwait';
+// import Nav from './Components/Nav/Nav';
 
 function App() {
   return (
     <div className="App">
+    {/* <Nav/> */}
      {/* <State /> */}
      {/* <ProfileState/> */}
     {/* <User/> */}
     {/* <Parent/> */}
     {/* <Home/> */}
     {/* <UserProfile/> */}
-    {/* <Gender/> */}
+    <Gender/>
     {/* <AxiosUser/> */}
-    <AsyncAwait/>
+    {/* <AsyncAwait/> */}
     </div>
   );
 }
