@@ -11,6 +11,7 @@ import AsyncAwait from './Components/Axios/AsyncAwait';
 import Nav from './Components/Nav/Nav';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
+import A from './Components/ContextAPI/A';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
   <Route path="/chatapp" element={<Home/>} />
   <Route path="/profile" element={<ProfileState/>} />
   <Route path="/gender" element={<Gender/>} />
+  <Route path="/context" element={<A/>} />
   <Route path="*" element={<PageNotFound />} />
 </Routes>
 </BrowserRouter>

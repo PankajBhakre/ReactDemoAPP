@@ -29,6 +29,11 @@ import {Link} from 'react-router-dom'
                 FilterApp
             </Link>
                 </li>
+                <li className='nav-item'>
+                <Link to='/context' className='nav-link text-white'>
+                ContextAPI
+            </Link>
+                </li>
             </ul>
         </div>
     </nav>;
