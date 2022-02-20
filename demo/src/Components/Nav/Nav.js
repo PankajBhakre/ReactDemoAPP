@@ -10,7 +10,7 @@ import {Link} from 'react-router-dom'
             </Link>
             <ul className='nav'>
                 <li className='nav-item'>
-                <Link to='/home' className='nav-link text-white'>
+                <Link to='/axios' className='nav-link text-white'>
                 Axios
             </Link>
                 </li>
@@ -32,6 +32,11 @@ import {Link} from 'react-router-dom'
                 <li className='nav-item'>
                 <Link to='/context' className='nav-link text-white'>
                 ContextAPI
+            </Link>
+                </li>
+                <li className='nav-item'>
+                <Link to='/contextTask' className='nav-link text-white'>
+                ContextTask
             </Link>
                 </li>
             </ul>

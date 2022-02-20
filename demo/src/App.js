@@ -12,6 +12,7 @@ import Nav from './Components/Nav/Nav';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import A from './Components/ContextAPI/A';
+import ContextHome from './Components/ContextTask/Home';
 
 function App() {
   return (
@@ -20,11 +21,12 @@ function App() {
 <Nav/>
 <Routes>
 <Route path="/" element={<State/>} />
-  <Route path="/home" element={<AsyncAwait/>} />
+  <Route path="/axios" element={<AsyncAwait/>} />
   <Route path="/chatapp" element={<Home/>} />
   <Route path="/profile" element={<ProfileState/>} />
   <Route path="/gender" element={<Gender/>} />
   <Route path="/context" element={<A/>} />
+  <Route path="/contextTask" element={<ContextHome/>} />
   <Route path="*" element={<PageNotFound />} />
 </Routes>
 </BrowserRouter>
