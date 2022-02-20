@@ -39,6 +39,11 @@ import {Link} from 'react-router-dom'
                 ContextTask
             </Link>
                 </li>
+                <li className="nav-item">
+              <Link to="/hoc" className="nav-link text-white">
+                HOC
+              </Link>
+            </li>
             </ul>
         </div>
     </nav>;

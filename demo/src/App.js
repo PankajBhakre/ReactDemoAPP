@@ -13,6 +13,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import A from './Components/ContextAPI/A';
 import ContextHome from './Components/ContextTask/Home';
+import HOCHome from './Components/HOC/HOCHome';
+
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
   <Route path="/gender" element={<Gender/>} />
   <Route path="/context" element={<A/>} />
   <Route path="/contextTask" element={<ContextHome/>} />
+  <Route path="/hoc" element={<HOCHome />} />
   <Route path="*" element={<PageNotFound />} />
 </Routes>
 </BrowserRouter>
